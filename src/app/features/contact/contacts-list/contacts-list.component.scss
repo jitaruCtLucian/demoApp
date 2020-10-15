@@ -1,0 +1,15 @@
+@import '~@swimlane/ngx-datatable/index.css';
+@import '~@swimlane/ngx-datatable/themes/material.scss';
+@import '~@swimlane/ngx-datatable/assets/icons.css';
+
+
+:host {
+    ::ng-deep {
+        .ngx-datatable.contact-list-datatable {
+            height: 100vh;
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+}
+

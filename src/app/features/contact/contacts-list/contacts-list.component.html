@@ -1,0 +1,13 @@
+<button (click)="manageContact()">Add contact</button>
+
+<ngx-datatable
+    class="material contact-list-datatable"
+    [rows]="rows"
+    [columns]="columns"
+    [scrollbarH]="true"
+    [scrollbarV]="true">
+    <ng-template #actionsTemplate ngx-datatable-cell-template let-value="value">
+        <button (click)="manageContact(value)"> edit </button>
+        <button (click)="deleteContact(value)"> x </button>
+    </ng-template>
+</ngx-datatable>
